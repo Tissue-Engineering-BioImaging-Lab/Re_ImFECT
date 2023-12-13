@@ -1,21 +1,21 @@
-# ImageJ/Fiji Installation and Package Management Guide
+# ImageJ
 
 Welcome to the ImageJ/Fiji Installation and Package Management Guide! In this guide, we'll walk you through the installation, uninstallation, usage, adding, and removing packages for ImageJ/Fiji on Windows, macOS, and Linux. We'll make it easy to understand with step-by-step examples.
 
 ## Table of Contents
-- [ImageJ/Fiji Installation and Package Management Guide](#imagejfiji-installation-and-package-management-guide)
-	- [Table of Contents](#table-of-contents)
-	- [Installation](#installation)
-		- [Windows](#windows)
-		- [macOS](#macos)
-		- [Linux](#linux)
-	- [Uninstallation](#uninstallation)
-		- [Windows](#windows-1)
-		- [macOS](#macos-1)
-		- [Linux](#linux-1)
-	- [Usage](#usage)
-	- [Adding Packages](#adding-packages)
-	- [Removing Packages](#removing-packages)
+- [ImageJ](#imagej)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+    - [Windows](#windows)
+    - [macOS](#macos)
+    - [Linux](#linux)
+  - [Uninstallation](#uninstallation)
+    - [Windows](#windows-1)
+    - [macOS](#macos-1)
+    - [Linux](#linux-1)
+  - [Usage](#usage)
+  - [Adding Packages](#adding-packages)
+  - [Removing Packages](#removing-packages)
 
 ## Installation
 

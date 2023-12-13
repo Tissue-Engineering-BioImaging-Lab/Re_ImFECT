@@ -1,14 +1,14 @@
-# Python Virtual Environment (virtualenv)
+# Python Virtual Environment
 
-- [Python Virtual Environment (virtualenv)](#python-virtual-environment-virtualenv)
-	- [1. Introduction:](#1-introduction)
-	- [2. Overview:](#2-overview)
-	- [3. Installation:](#3-installation)
-	- [4. Creating Virtual Environments:](#4-creating-virtual-environments)
-	- [5. Activating the Virtual Environment:](#5-activating-the-virtual-environment)
-	- [6. Installing python requirements:](#6-installing-python-requirements)
-	- [7. Deactivating the Virtual Environment:](#7-deactivating-the-virtual-environment)
-	- [Additional Resources:\*\*](#additional-resources)
+- [Python Virtual Environment](#python-virtual-environment)
+  - [1. Introduction:](#1-introduction)
+  - [2. Overview:](#2-overview)
+  - [3. Installation:](#3-installation)
+  - [4. Creating Virtual Environments:](#4-creating-virtual-environments)
+  - [5. Activating the Virtual Environment:](#5-activating-the-virtual-environment)
+  - [6. Installing python requirements:](#6-installing-python-requirements)
+  - [7. Deactivating the Virtual Environment:](#7-deactivating-the-virtual-environment)
+  - [Additional Resources:\*\*](#additional-resources)
 
 
 

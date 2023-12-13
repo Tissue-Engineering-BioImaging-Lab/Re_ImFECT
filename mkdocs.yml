@@ -1,0 +1,17 @@
+site_name: Re_ImFECT Documentation
+site_url: https://TEB-Re_ImFECT.com
+site_description: Documentation for RE_ImFECT Project.
+site_author: Contesini, G.S.
+
+nav:
+    - Home: index.md
+    - Fiji: fiji.md
+    - Samples: samples.md
+    - Texture_Analysis: texture_analysis.md
+    - TEB_TEAMHub: teb_teamhub.md
+    - Git: git.md
+    - Virtual_Env: virtualenv.md
+    - About:
+        - License: license.md
+
+theme: readthedocs
