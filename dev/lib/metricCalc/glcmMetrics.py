@@ -16,7 +16,7 @@ import math
 import numpy as np
 
 
-def calcGLCMMetrics(glcm):
+def calcGLCMMetrics(glcm) -> dict[str, int]:
 
     # Initialize variables
     d_0 = 1e-8  # avoid division by zero
