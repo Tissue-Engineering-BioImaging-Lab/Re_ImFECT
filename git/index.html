@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Contesini, G.S." /><link rel="canonical" href="https://TEB-Re_ImFECT.com/git/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Git - Re_ImFECT Documentation</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Git";
+        var mkdocs_page_input_path = "git.md";
+        var mkdocs_page_url = "/git/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Re_ImFECT Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../fiji/">Fiji</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../samples/">Samples</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../texture_analysis/">Texture_Analysis</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../teb_teamhub/">TEB_TEAMHub</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Git</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#table-of-contents">Table of Contents</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#what-is-git-and-why-we-use-it">What is Git ? And why we use it ?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#disclamer">Disclamer</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#installation-via-package-manager">Installation via Package Manager</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#uninstall">Uninstall</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#basic-git-commands">Basic Git Commands</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#add">Add</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#commit">Commit</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#status">Status</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#log">Log</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#branch-management">Branch Management</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#create-and-switch-branches">Create and Switch Branches</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#squash-commits">Squash Commits</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#remote-repository-interaction">Remote Repository Interaction</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#fetch">Fetch</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#pull">Pull</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#push">Push</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#create-a-merge-request-in-gitlab">Create a Merge Request in GitLab</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#merge-two-branches">Merge Two Branches</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../virtualenv/">Virtual_Env</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">About</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../license/">License</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Re_ImFECT Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Git</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="git">Git</h1>
+<p>Welcome to the Git User Guide! In this guide, we'll walk you through common Git operations, including installation, uninstallation, basic commands, branch management, committing, fetching, pulling, pushing, creating a merge request in GitLab, and merging branches.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#git">Git</a></li>
+<li><a href="#table-of-contents">Table of Contents</a></li>
+<li><a href="#what-is-git--and-why-we-use-it-">What is Git ? And why we use it ?</a></li>
+<li><a href="#disclamer">Disclamer</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#installation-via-package-manager">Installation via Package Manager</a></li>
+<li><a href="#uninstall">Uninstall</a></li>
+<li><a href="#basic-git-commands">Basic Git Commands</a><ul>
+<li><a href="#add">Add</a></li>
+<li><a href="#commit">Commit</a></li>
+<li><a href="#status">Status</a></li>
+<li><a href="#log">Log</a></li>
+</ul>
+</li>
+<li><a href="#branch-management">Branch Management</a><ul>
+<li><a href="#create-and-switch-branches">Create and Switch Branches</a></li>
+<li><a href="#squash-commits">Squash Commits</a></li>
+</ul>
+</li>
+<li><a href="#remote-repository-interaction">Remote Repository Interaction</a><ul>
+<li><a href="#fetch">Fetch</a></li>
+<li><a href="#pull">Pull</a></li>
+<li><a href="#push">Push</a></li>
+<li><a href="#create-a-merge-request-in-gitlab">Create a Merge Request in GitLab</a></li>
+<li><a href="#merge-two-branches">Merge Two Branches</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="what-is-git-and-why-we-use-it">What is Git ? And why we use it ?</h2>
+<p>Git is a distributed version control system (DVCS) that is widely used in software development and other fields to track and manage changes to source code and other files. It was created by Linus Torvalds in 2005 and has since become ~~one of~~ <strong>the most</strong> popular version control systems in the world. Here are some key concepts and features of Git:</p>
+<ol>
+<li>
+<p><strong>Version Control</strong>: Git allows you to track changes to your project's files over time. It records a history of all modifications, who made them, and when they were made.</p>
+</li>
+<li>
+<p><strong>Distributed</strong>: Git is a distributed version control system, which means that every developer working on a project has a full copy of the entire repository, including its history. This enables developers to work independently, even when they are not connected to a central server.</p>
+</li>
+<li>
+<p><strong>Branching and Merging</strong>: Git makes it easy to create branches, which are separate lines of development. Developers can work on features or bug fixes in their own branches and then merge their changes back into the main branch when they are ready.</p>
+</li>
+<li>
+<p><strong>Collaboration</strong>: Git facilitates collaboration among developers. Multiple people can work on the same project simultaneously, and Git helps manage conflicts when multiple changes overlap.</p>
+</li>
+<li>
+<p><strong>Remote Repositories</strong>: Git supports remote repositories, allowing teams to work together on a project, even when team members are in different locations. Popular hosting services like GitHub, GitLab, and Bitbucket provide a platform for hosting Git repositories in the cloud.</p>
+</li>
+<li>
+<p><strong>Commit History</strong>: Git maintains a detailed commit history that includes information about each change, such as the author, date, and a commit message explaining the purpose of the change.</p>
+</li>
+<li>
+<p><strong>Revert and Rollback</strong>: Git allows you to easily revert to previous versions of your project if a mistake is made or if you need to go back to an earlier state.</p>
+</li>
+<li>
+<p><strong>Security and Integrity</strong>: Git uses cryptographic hashes to ensure the integrity of your project's history. This means that once data is committed to a Git repository, it cannot be changed without leaving a trace.</p>
+</li>
+<li>
+<p><strong>Open Source</strong>: Git is open source software and is available for free. It has a large and active community of users and contributors who continue to improve and extend its functionality.</p>
+</li>
+</ol>
+<p>Git is an essential tool for software development but is also used in various other domains where version control and change tracking are important, such as documentation, configuration management, and more. Learning how to use Git effectively is a valuable skill for anyone involved in collaborative or versioned work.</p>
+<h2 id="disclamer">Disclamer</h2>
+<p>If you prefer not to use git in the terminal or if you don't feel confidant enough to using the terminal, we <strong>higly recommend</strong> using <code>sublime-merge</code>. It offers a user interface for git, that make it easier to understand and use all the git commands.</p>
+<h2 id="installation">Installation</h2>
+<p>If you haven't already installed Git, follow these steps:</p>
+<ol>
+<li>
+<p>Download Git for your specific platform from <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>.</p>
+</li>
+<li>
+<p>Run the installer and follow the installation instructions.</p>
+</li>
+<li>
+<p>To verify that Git is installed, open your terminal/command prompt and run:</p>
+</li>
+</ol>
+<p><code>bash
+   git --version</code></p>
+<p>You should see the Git version you installed.</p>
+<h2 id="installation-via-package-manager">Installation via Package Manager</h2>
+<p>On Debian-based distributions like Ubuntu, you can use the <code>apt</code> package manager to install Git:</p>
+<pre><code class="language-bash">sudo apt update
+sudo apt install git
+</code></pre>
+<h2 id="uninstall">Uninstall</h2>
+<p>If you ever need to uninstall Git, follow these steps based on your platform:</p>
+<ul>
+<li><strong>Windows:</strong></li>
+</ul>
+<p>Use the "Add or Remove Programs" feature in the Control Panel to uninstall Git.</p>
+<ul>
+<li><strong>macOS:</strong></li>
+</ul>
+<p>You can uninstall Git using Homebrew by running:</p>
+<p><code>bash
+  brew uninstall git</code></p>
+<ul>
+<li><strong>Linux:</strong></li>
+</ul>
+<p>Use your system's package manager to uninstall Git. For example, on Ubuntu:</p>
+<p><code>bash
+  sudo apt-get remove git</code></p>
+<h2 id="basic-git-commands">Basic Git Commands</h2>
+<h3 id="add">Add</h3>
+<p>Git allows you to selectively choose which changes you want to include in the next commit. This process is called "staging." You use the git add command to stage changes.</p>
+<pre><code class="language-bash">git add filename
+</code></pre>
+<h3 id="commit">Commit</h3>
+<p>A "commit" refers to a fundamental operation that records changes to a set of files in a repository. When you make changes to files within a Git repository. Commits are the building blocks of a Git repository's history. They allow you to track changes over time, collaborate with others, and easily revert to previous states of your project if needed.</p>
+<p>To save your changes to the repository, use the following command:</p>
+<pre><code class="language-bash">git commit -m &quot;Your commit message&quot;
+</code></pre>
+<p>This command commits your changes to the current branch with a descriptive message.</p>
+<h3 id="status">Status</h3>
+<p>To check the status of your working directory, including untracked and modified files, use:</p>
+<pre><code class="language-bash">git status
+</code></pre>
+<p>This command helps you keep track of changes in your repository.</p>
+<h3 id="log">Log</h3>
+<p>To view the commit history, use:</p>
+<pre><code class="language-bash">git log
+</code></pre>
+<p>This command displays a list of commits, including their messages and authors.</p>
+<h2 id="branch-management">Branch Management</h2>
+<h3 id="create-and-switch-branches">Create and Switch Branches</h3>
+<p>Branches in Git provide a powerful way to organize and manage development efforts, enabling parallel work, experimentation, code review, and the ability to address issues and features in an organized and controlled manner. They help maintain code stability and facilitate efficient collaboration among developers.</p>
+<p>To create a new branch and switch to it, use:</p>
+<pre><code class="language-bash">git checkout -b new-branch-name
+</code></pre>
+<p>This command creates a new branch and switches to it.
+Alternativelly, if you wish to just create a new branch, use:</p>
+<pre><code class="language-bash">git branch new-branch-name
+</code></pre>
+<h3 id="squash-commits">Squash Commits</h3>
+<p>To combine multiple commits into a single commit, use an interactive rebase:</p>
+<pre><code class="language-bash">git rebase -i HEAD~n
+</code></pre>
+<p>Replace <code>n</code> with the number of commits you want to squash. Follow the interactive rebase instructions to squash the commits.</p>
+<h2 id="remote-repository-interaction">Remote Repository Interaction</h2>
+<h3 id="fetch">Fetch</h3>
+<p>To update your local repository with changes from the remote repository, use:</p>
+<pre><code class="language-bash">git fetch
+</code></pre>
+<p>This command fetches changes without automatically merging them into your local branch.</p>
+<h3 id="pull">Pull</h3>
+<p>To fetch and merge changes from the remote repository into your current branch, use:</p>
+<pre><code class="language-bash">git pull
+</code></pre>
+<p>This command updates your local branch with remote changes.</p>
+<h3 id="push">Push</h3>
+<p>To push your local changes to the remote repository, use:</p>
+<pre><code class="language-bash">git push
+</code></pre>
+<p>This command uploads your local commits to the remote repository.</p>
+<h3 id="create-a-merge-request-in-gitlab">Create a Merge Request in GitLab</h3>
+<ol>
+<li>
+<p>Go to your GitLab repository on the GitLab website.</p>
+</li>
+<li>
+<p>Click on the "Merge Requests" tab.</p>
+</li>
+<li>
+<p>Click the "New Merge Request" button.</p>
+</li>
+<li>
+<p>Select the source branch and target branch for the merge request.</p>
+</li>
+<li>
+<p>Add a title and description for your merge request.</p>
+</li>
+<li>
+<p>Click the "Submit merge request" button.</p>
+</li>
+</ol>
+<h3 id="merge-two-branches">Merge Two Branches</h3>
+<p>To merge two branches (e.g., feature-branch into main), you can use the following steps:</p>
+<ol>
+<li>Checkout the target branch (e.g., main):</li>
+</ol>
+<p><code>bash
+   git checkout main</code></p>
+<ol>
+<li>Merge the source branch (e.g., feature-branch) into the target branch:</li>
+</ol>
+<p><code>bash
+   git merge feature-branch</code></p>
+<ol>
+<li>
+<p>Resolve any merge conflicts if they occur.</p>
+</li>
+<li>
+<p>Commit the merge:</p>
+</li>
+</ol>
+<p><code>bash
+   git commit -m "Merge feature-branch into main"</code></p>
+<ol>
+<li>Push the changes to the remote repository:</li>
+</ol>
+<p><code>bash
+   git push</code></p>
+<p>That's it! You're now equipped with essential Git commands and GitLab operations to manage your Git repositories. Happy coding and collaborating!</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../teb_teamhub/" class="btn btn-neutral float-left" title="TEB_TEAMHub"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../virtualenv/" class="btn btn-neutral float-right" title="Virtual_Env">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../teb_teamhub/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../virtualenv/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Contesini, G.S." /><link rel="canonical" href="https://TEB-Re_ImFECT.com/fiji/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Fiji - Re_ImFECT Documentation</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Fiji";
+        var mkdocs_page_input_path = "fiji.md";
+        var mkdocs_page_url = "/fiji/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Re_ImFECT Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Fiji</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#table-of-contents">Table of Contents</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#windows">Windows</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#macos">macOS</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#linux">Linux</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#uninstallation">Uninstallation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#windows_1">Windows</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#macos_1">macOS</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#linux_1">Linux</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#usage">Usage</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#adding-packages">Adding Packages</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#removing-packages">Removing Packages</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../samples/">Samples</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../texture_analysis/">Texture_Analysis</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../teb_teamhub/">TEB_TEAMHub</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../git/">Git</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../virtualenv/">Virtual_Env</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">About</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../license/">License</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Re_ImFECT Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Fiji</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="imagej">ImageJ</h1>
+<p>Welcome to the ImageJ/Fiji Installation and Package Management Guide! In this guide, we'll walk you through the installation, uninstallation, usage, adding, and removing packages for ImageJ/Fiji on Windows, macOS, and Linux. We'll make it easy to understand with step-by-step examples.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#imagej">ImageJ</a></li>
+<li><a href="#table-of-contents">Table of Contents</a></li>
+<li><a href="#installation">Installation</a><ul>
+<li><a href="#windows">Windows</a></li>
+<li><a href="#macos">macOS</a></li>
+<li><a href="#linux">Linux</a></li>
+</ul>
+</li>
+<li><a href="#uninstallation">Uninstallation</a><ul>
+<li><a href="#windows-1">Windows</a></li>
+<li><a href="#macos-1">macOS</a></li>
+<li><a href="#linux-1">Linux</a></li>
+</ul>
+</li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#adding-packages">Adding Packages</a></li>
+<li><a href="#removing-packages">Removing Packages</a></li>
+</ul>
+<h2 id="installation">Installation</h2>
+<h3 id="windows">Windows</h3>
+<ol>
+<li><strong>Download ImageJ/Fiji:</strong></li>
+</ol>
+<p>Visit the official website at <a href="https://imagej.net/Fiji/Downloads">https://imagej.net/Fiji/Downloads</a>.</p>
+<p><img alt="Download Page" src="https://example.com/download-image.png" /></p>
+<ol>
+<li><strong>Install ImageJ/Fiji:</strong></li>
+</ol>
+<p>Run the downloaded installer and follow the installation instructions.</p>
+<p><img alt="Installer" src="https://example.com/installer.png" /></p>
+<h3 id="macos">macOS</h3>
+<ol>
+<li><strong>Download ImageJ/Fiji:</strong></li>
+</ol>
+<p>Visit the official website at <a href="https://imagej.net/Fiji/Downloads">https://imagej.net/Fiji/Downloads</a>.</p>
+<p><img alt="Download Page" src="https://example.com/download-image.png" /></p>
+<ol>
+<li><strong>Install ImageJ/Fiji:</strong></li>
+</ol>
+<p>Open the downloaded <code>.dmg</code> file, and then drag the ImageJ/Fiji application to your Applications folder.</p>
+<p><img alt="Drag to Applications" src="https://example.com/drag-to-applications.png" /></p>
+<h3 id="linux">Linux</h3>
+<ol>
+<li><strong>Download ImageJ/Fiji:</strong></li>
+</ol>
+<p>Visit the official website at <a href="https://imagej.net/Fiji/Downloads">https://imagej.net/Fiji/Downloads</a>.</p>
+<p><img alt="Download Page" src="https://example.com/download-image.png" /></p>
+<ol>
+<li>
+<p><strong>Extract and Install ImageJ/Fiji:</strong></p>
+</li>
+<li>
+<p><strong>Using Terminal:</strong></p>
+<p><code>bash
+ tar -xvzf Fiji.app.tar.gz
+ cd Fiji.app
+ ./ImageJ-linux64</code></p>
+</li>
+<li>
+<p><strong>Using GUI:</strong></p>
+<p>Extract the downloaded archive and run the <code>ImageJ-linux64</code> executable.</p>
+<p><img alt="Run ImageJ" src="https://example.com/run-imagej.png" /></p>
+</li>
+</ol>
+<h2 id="uninstallation">Uninstallation</h2>
+<h3 id="windows_1">Windows</h3>
+<ol>
+<li><strong>Uninstall ImageJ/Fiji:</strong></li>
+</ol>
+<p>Open the Windows Control Panel, navigate to "Programs," and select "Uninstall a program." Find ImageJ/Fiji and uninstall it.</p>
+<h3 id="macos_1">macOS</h3>
+<ol>
+<li><strong>Uninstall ImageJ/Fiji:</strong></li>
+</ol>
+<p>Drag the ImageJ/Fiji application from your Applications folder to the Trash.</p>
+<h3 id="linux_1">Linux</h3>
+<ol>
+<li><strong>Uninstall ImageJ/Fiji:</strong></li>
+</ol>
+<p>Simply delete the ImageJ/Fiji directory that you extracted.</p>
+<h2 id="usage">Usage</h2>
+<p>After installing ImageJ/Fiji, launch the application. You'll see the ImageJ/Fiji user interface.</p>
+<p><img alt="ImageJ/Fiji UI" src="https://example.com/imagej-ui.png" /></p>
+<p>You can now use the powerful image processing and analysis features provided by ImageJ/Fiji.</p>
+<h2 id="adding-packages">Adding Packages</h2>
+<p>ImageJ/Fiji uses a plugin system to add functionality. Here's how to add a package (plugin):</p>
+<ol>
+<li>
+<p><strong>Open ImageJ/Fiji.</strong></p>
+</li>
+<li>
+<p><strong>Click on "Help" &gt; "Update...".</strong></p>
+</li>
+</ol>
+<p><img alt="Update Menu" src="https://example.com/update-menu.png" /></p>
+<ol>
+<li><strong>In the "ImageJ Updater" dialog, click on the "Manage update sites" button.</strong></li>
+</ol>
+<p><img alt="Updater Dialog" src="https://example.com/updater-dialog.png" /></p>
+<ol>
+<li><strong>Enable the update sites that contain the packages you want to install.</strong></li>
+</ol>
+<p><img alt="Update Sites" src="https://example.com/update-sites.png" /></p>
+<ol>
+<li>
+<p><strong>Click "Close," and you will be prompted to restart ImageJ/Fiji.</strong></p>
+</li>
+<li>
+<p><strong>After restarting, the packages from the enabled update sites will be available in ImageJ/Fiji.</strong></p>
+</li>
+</ol>
+<h2 id="removing-packages">Removing Packages</h2>
+<p>To remove a package (plugin) in ImageJ/Fiji:</p>
+<ol>
+<li>
+<p><strong>Open ImageJ/Fiji.</strong></p>
+</li>
+<li>
+<p><strong>Click on "Help" &gt; "Update...".</strong></p>
+</li>
+</ol>
+<p><img alt="Update Menu" src="https://example.com/update-menu.png" /></p>
+<ol>
+<li><strong>In the "ImageJ Updater" dialog, click on the "Manage update sites" button.</strong></li>
+</ol>
+<p><img alt="Updater Dialog" src="https://example.com/updater-dialog.png" /></p>
+<ol>
+<li><strong>Disable the update sites that contain the packages you want to uninstall.</strong></li>
+</ol>
+<p><img alt="Update Sites" src="https://example.com/update-sites.png" /></p>
+<ol>
+<li>
+<p><strong>Click "Close," and you will be prompted to restart ImageJ/Fiji.</strong></p>
+</li>
+<li>
+<p><strong>After restarting, the disabled packages will be removed from ImageJ/Fiji.</strong></p>
+</li>
+</ol>
+<p>Congratulations! You've successfully installed, managed, and used ImageJ/Fiji on your system. Enjoy image processing and analysis!</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../samples/" class="btn btn-neutral float-right" title="Samples">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../samples/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
