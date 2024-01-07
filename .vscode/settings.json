@@ -1,0 +1,8 @@
+"editor.formatOnSave": true,
+"[python]": {
+    "editor.formatOnSave": true
+},
+"python.formatting.provider": "autopep8",
+"python.formatting.autopep8Path": "autopep8",
+"python.formatting.provider": "autopep8",
+"python.formatting.autopep8Args": ["--aggressive", "--aggressive", "--indent-after-paren", "1", "--indent-before-paren", "1"],

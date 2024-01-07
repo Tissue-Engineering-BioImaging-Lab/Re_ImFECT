@@ -14,6 +14,8 @@ PROJECT_NAME = your_project_name
 install: $(VENV)
 	@echo "▶️ - Creating virtual environment..."
 	@echo 
+	@echo "✅ - Virtual environment created."
+	@echo 
 	@python3 -m venv $(VENV)
 	@echo 
 	@echo "▶️ - Installing dependencies..."
@@ -30,4 +32,4 @@ clean:
 run:
 	@echo "Checking requirements..." 
 	@echo 
-	@$(pyhton) main.py
+	@$(PYTHON) main_imfect.py

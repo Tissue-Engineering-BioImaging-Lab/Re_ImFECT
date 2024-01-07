@@ -4,13 +4,13 @@ __pycache__/
 *$py.class
 
 # Images
-.tif
+*.tif
 
 # Results
-.csv 
+*.csv 
 
 # VirtualEnv
-re_imfect
+venv/
 
 # C extensions
 *.so
